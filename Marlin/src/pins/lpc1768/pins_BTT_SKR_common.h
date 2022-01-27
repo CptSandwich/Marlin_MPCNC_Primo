@@ -89,16 +89,16 @@
 //
 // Heaters / Fans
 //
-#ifndef HEATER_0_PIN
-  #define HEATER_0_PIN                     P2_07
+#ifndef SPINDLE_LASER_ENA_PIN
+  #define SPINDLE_LASER_ENA_PIN                     P2_07
 #endif
 #if HOTENDS == 1 && DISABLED(HEATERS_PARALLEL)
   #ifndef FAN1_PIN
     #define FAN1_PIN                       P2_04
   #endif
 #else
-  #ifndef HEATER_1_PIN
-    #define HEATER_1_PIN                   P2_04
+  #ifndef AIR_EVACUATION_PIN
+    #define AIR_EVACUATION_PIN                  P2_04
   #endif
 #endif
 #ifndef FAN_PIN
